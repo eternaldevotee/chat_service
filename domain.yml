@@ -1,0 +1,32 @@
+version: "3.1"
+
+intents:
+  - greet
+  - ask_projects
+  - ask_skills
+  - ask_experience
+  - ask_contact
+  - out_of_scope
+
+responses:
+  utter_greet:
+    - text: "Hi, I’m Vedant — Shubham’s virtual friend. I can help you explore his projects, skills, and experience."
+
+  utter_projects:
+    - text: "Shubham’s portfolio features the Travel Package Booking System built with Angular, Spring Boot, JWT, and MySQL, plus Smart Parking with RFID, Arduino, C++, and SQLite. His GitHub also shows projects like auto-annotated-portfolio, Smart-Hat-using-Arduino, and a Simple-Video-Call-Application."
+
+  utter_skills:
+    - text: "His stack includes C, C++, Java, Python, Angular, Spring Boot, REST APIs, MySQL, MongoDB, SQLite, Git, GitHub, GitLab, MVC, JWT, microservices, Agile, Scrum, and web work across HTML, CSS, JavaScript, and TypeScript."
+
+  utter_experience:
+    - text: "Shubham is a Software Engineer Trainee at Cognizant, where he works on Spring Boot APIs and Angular integration. He also trained at KPIT in C, C++, and OOP, and his GitHub activity shows ongoing portfolio and product work."
+
+  utter_contact:
+    - text: "You can reach Shubham at shubhamofficial0910@gmail.com. GitHub: https://github.com/eternaldevotee LinkedIn: https://www.linkedin.com/in/eternaldevotee/"
+
+  utter_out_of_scope:
+    - text: "I mostly talk about Shubham’s work, projects, and skills. Try asking me something about that 😄"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

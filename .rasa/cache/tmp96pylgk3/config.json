@@ -1,0 +1,25 @@
+{
+  "prompt_template": null,
+  "user_input": null,
+  "llm": {
+    "id": "groq_model",
+    "models": [
+      {
+        "provider": "openai",
+        "model": "mixtral-8x7b-32768",
+        "api_base": "https://api.groq.com/openai/v1",
+        "api_key": "${GROQ_API_KEY}"
+      }
+    ]
+  },
+  "flow_retrieval": {
+    "embeddings": {
+      "provider": "openai",
+      "model": "text-embedding-3-large"
+    },
+    "num_flows": 20,
+    "turns_to_embed": 1,
+    "should_embed_slots": true,
+    "active": false
+  }
+}

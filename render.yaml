@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: vedant-portfolio-bot
+    env: python
+    plan: free
+    autoDeploy: true
+    buildCommand: pip install -r requirements.txt && python -m rasa train --config config.render.yml --endpoints endpoints.render.yml
+    startCommand: python -m rasa run --enable-api --cors "*" --host 0.0.0.0 --port $PORT --model models --endpoints endpoints.render.yml
+    healthCheckPath: /status
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9

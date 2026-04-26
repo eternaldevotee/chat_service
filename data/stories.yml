@@ -1,0 +1,32 @@
+version: "3.1"
+
+stories:
+  - story: greet path
+    steps:
+      - intent: greet
+      - action: utter_greet
+
+  - story: projects path
+    steps:
+      - intent: ask_projects
+      - action: utter_projects
+
+  - story: skills path
+    steps:
+      - intent: ask_skills
+      - action: utter_skills
+
+  - story: experience path
+    steps:
+      - intent: ask_experience
+      - action: utter_experience
+
+  - story: contact path
+    steps:
+      - intent: ask_contact
+      - action: utter_contact
+
+  - story: out of scope path
+    steps:
+      - intent: out_of_scope
+      - action: utter_out_of_scope

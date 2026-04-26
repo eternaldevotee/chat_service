@@ -1,0 +1,130 @@
+version: "3.1"
+
+nlu:
+  - intent: greet
+    examples: |
+      - hi
+      - hello
+      - hey
+      - hi there
+      - hello Vedant
+      - hey Vedant
+      - good morning
+      - good afternoon
+      - good evening
+      - yo
+      - howdy
+      - hey bot
+      - hi assistant
+      - hello there
+      - start chat
+      - can you help me
+      - I want to know more about the portfolio
+      - what can you do
+
+  - intent: ask_projects
+    examples: |
+      - what projects has Shubham worked on
+      - tell me about his projects
+      - show me the portfolio projects
+      - what are his main projects
+      - what did he build
+      - give me project highlights
+      - can you list his projects
+      - what kind of apps has he made
+      - describe one of his projects
+      - what are the best projects in his portfolio
+      - which projects are featured
+      - what has he created
+      - what side projects does he have
+      - tell me about any recent project
+      - what are his portfolio projects about
+      - what work samples does he show
+      - what is he building
+      - what projects should I look at
+
+  - intent: ask_skills
+    examples: |
+      - what are Shubham's skills
+      - what tech stack does he know
+      - tell me about his skills
+      - which technologies does he use
+      - what programming languages does he know
+      - what tools is he familiar with
+      - what is his tech stack
+      - what frameworks does he use
+      - what are his strengths
+      - what is he good at
+      - list his technical skills
+      - what backend skills does he have
+      - what frontend skills does he have
+      - what cloud tools does he know
+      - what databases has he used
+      - what libraries does he work with
+      - what developer tools does he know
+      - how strong is he in coding
+
+  - intent: ask_experience
+    examples: |
+      - tell me about Shubham's experience
+      - what is his work experience
+      - does he have internship experience
+      - where has he worked
+      - what experience does he mention
+      - summarize his background
+      - how much experience does he have
+      - what jobs has he done
+      - what has he done professionally
+      - tell me about his internships
+      - what is his career experience
+      - has he worked on real projects
+      - describe his professional history
+      - what experience is in the portfolio
+      - what is his work history
+      - give me his experience summary
+      - what companies or teams has he worked with
+      - what kind of experience does he highlight
+
+  - intent: ask_contact
+    examples: |
+      - how can I contact Shubham
+      - what is his email
+      - how do I reach him
+      - is there a contact section
+      - share his contact details
+      - where can I message him
+      - what is his LinkedIn
+      - does he have a GitHub profile
+      - what are his social links
+      - how can I get in touch
+      - can you share his phone number
+      - where is his resume contact info
+      - how do I connect with him
+      - what is the best way to contact him
+      - does he have a portfolio contact page
+      - give me his contact information
+      - can I find his email here
+      - how can recruiters contact him
+
+  - intent: out_of_scope
+    examples: |
+      - what is the weather today
+      - tell me a joke
+      - who won the match
+      - what is 2 plus 2
+      - explain quantum physics
+      - give me stock tips
+      - what time is it
+      - write me a poem
+      - who is the president
+      - tell me a random fact
+      - help me debug my code
+      - what are the latest news headlines
+      - what movie should I watch
+      - can you cook pasta
+      - what is your favorite color
+      - sing a song
+      - solve this math problem
+      - should I invest in crypto
+      - tell me a funny story
+      - what is the capital of France
